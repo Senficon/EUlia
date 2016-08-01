@@ -1,0 +1,34 @@
+# Changelog
+
+## Version 2.0
+
+* Added this file
+* Cleaned and organized all theme templates and files
+* Implemented coding best practices as outlined by the WordPress codex
+* Added more documentation and comments to code
+* Updated scripts to latest versions and added to theme rather than CDN
+* Removed related posts function
+* Added new function for adding first and last classes to menus in base-functions.php, now works with nested ul items
+* Updated and added new tinymce functions for ease of customization
+* Added theme page to Appearances menu
+* Updated pre_get_posts functions for use only on the frontend
+* Removed custom-post-type.php example
+* Removed iCheck, too many problems
+* Improved magnific popup script in scripts.js to work with built-in WordPress gallery
+* Added "equal height" div script
+* Improved main navigation functionality and styles
+* Responsive style improvements
+* Form style improvements
+* Added templates folder
+* Added sidebar.php
+* Various other tweaks and improvements
+* Replaced ChosenJS with Select2
+* Added template-parts folder
+* Gravity Forms style updates - compatibility with Version 2.0.2
+* Added flexbox mixins
+* Table style improvements
+
+
+## Version 1.0
+
+* Initial version

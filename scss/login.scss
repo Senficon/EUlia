@@ -1,0 +1,68 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Login Stylesheet
+
+This stylesheet is loaded on the login page for custom styling.
+It won't affect any other page, admin or front-end.
+
+For more info, check out the codex:
+http://codex.wordpress.org/Creating_Admin_Themes
+
+******************************************************************/
+
+@import "compass";
+
+body.login {}
+
+#login {} /* the form box */
+
+/*
+ * This is the Wordpress logo in the admin area.
+ * You'll have to load your own images and mess
+ * with the width and height.
+ */
+.login h1 a {
+	/* Add a logo file and update these lines
+	background: url(../images/login-logo.png) no-repeat top center;
+	width: 320px;
+	height: 67px;
+	*/
+	display: block;
+	overflow: hidden;
+	padding-bottom: 15px;
+	text-indent: 100%;
+	white-space: nowrap;
+}
+
+form {
+	background: white;
+	border: 1px solid #E5E5E5;
+	@include border-radius(3px);
+	@include box-shadow(none);
+	font-weight: normal;
+	margin-left: 8px;
+	padding: 26px 24px 46px;
+}
+
+body form .input {
+	background: #FBFBFB;
+	border: 1px solid #E5E5E5;
+	@include box-shadow(rgba(200, 200, 200, 0.2) 1px 1px 2px inset);
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
+	font-size: 24px;
+	font-weight: 200;
+	margin-bottom: 16px;
+	margin-right: 6px;
+	margin-top: 2px;
+	outline: none;
+	padding: 3px;
+	width: 97%;
+}
+
+/*
+ * You'll have to override some of the default styles
+ * but since we're referencing the id, it should be easy.
+ */
+#wp-submit {} /* login button*/

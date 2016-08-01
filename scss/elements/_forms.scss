@@ -1,0 +1,303 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Forms Stylesheet
+
+******************************************************************/
+
+/**
+* Placeholders
+*/
+
+::-webkit-input-placeholder {
+	color: #CCC;
+	font-style: italic;
+	font-weight: 400;
+}
+
+:-moz-placeholder {
+	color: #CCC;
+	font-style: italic;
+	font-weight: 400;
+}
+
+::-moz-placeholder {
+	color: #CCC;
+	font-style: italic;
+	font-weight: 400;
+}
+
+:-ms-input-placeholder { /* IE 10-11 */
+	color: #CCC;
+	font-style: italic;
+	font-weight: 400;
+}
+
+::-ms-input-placeholder { /* IE EDGE */
+	color: #CCC;
+	font-style: italic;
+	font-weight: 400;
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+	-webkit-transition: opacity 0.5s 0.5s ease;
+	transition: opacity 0.5s 0.5s ease;
+	opacity: 0;
+}
+
+[placeholder]:focus:-moz-placeholder {
+	-moz-transition: opacity 0.5s 0.5s ease;
+	transition: opacity 0.5s 0.5s ease;
+	opacity: 0;
+}
+
+[placeholder]:focus::-moz-placeholder {
+	-moz-transition: opacity 0.5s 0.5s ease;
+	transition: opacity 0.5s 0.5s ease;
+	opacity: 0;
+}
+
+[placeholder]:focus:-ms-placeholder {
+	-ms-transition: opacity 0.5s 0.5s ease;
+	transition: opacity 0.5s 0.5s ease;
+	opacity: 0;
+}
+
+/**
+* Labels
+*/
+
+label {
+	display: inline-block;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+
+/**
+* Inputs
+*/
+
+textarea,
+select,
+input[type="text"],
+input[type="url"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="password"] {
+	background: $input__bg-color;
+	border: 1px solid $input__border-color;
+	border-radius: 0;
+	color: #444;
+	font-size: 1em;
+	letter-spacing: normal;
+	outline: none;
+	@include transition(all 0.25s ease-in-out);
+	width: 100%;
+
+	&:focus,
+	&:active {
+		background: $input__bg-focus-color;
+		border: 1px solid $input__border-focus-color;
+	}
+}
+
+select,
+input[type="text"],
+input[type="url"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="password"] {
+	line-height: $input__height;
+	height: $input__height;
+	padding: 0 8px;
+}
+
+input[type="image"] {
+	border: none;
+	padding: 0;
+	width: auto;
+}
+
+textarea {
+	resize: none;
+	padding: 8px
+}
+
+// Default select if Javascript is disabled
+select {
+	font-size: 1em;
+	font-family: inherit;
+	padding: 5px !important;
+	overflow: hidden;
+	letter-spacing: normal;
+	border: 0;
+	outline: 1px ridge $input__border-color;
+	-webkit-border-radius: 0;
+	-webkit-appearance: menulist-button;
+
+	option {
+		padding: 2px 10px !important;
+		display: block;
+	}
+	
+	&:focus {
+		border: 0;
+		outline: 1px ridge $input__border-focus-color;
+		-webkit-border-radius: 0;
+		-webkit-appearance: menulist-button;
+	}
+}
+
+
+/**
+* Submit & Buttons
+*/
+
+input[type="submit"],
+input[type="button"],
+button[type="submit"],
+a.button {
+	background-color: #34495e;
+	background-image: none;
+	border: 0;
+	border-radius: 0;
+	color: #FFF;
+	cursor: pointer;
+	display: inline-block;
+	font-family: $font__sans;
+	font-size: 1.125em;
+	font-weight: 700;
+	margin-bottom: 0;
+	padding-top: 0.675em;
+	padding-bottom: 0.675em;
+	padding-left: 1em;
+	padding-right: 1em;
+	text-align: center;
+	text-transform: uppercase;
+	@include transition(all 0.25s ease-in);
+	vertical-align: middle;
+	width: 100%;
+
+	&:hover,
+	&:focus,
+	&:active,
+	&.active {
+		background-color: #2c3e50;
+		color: #FFF;
+		text-decoration: none;
+	}
+
+	&:focus {
+		outline: thin dotted #333 !important;
+		outline: 5px auto -webkit-focus-ring-color;
+		outline-offset: -2px;
+	}
+
+	&:active {
+		outline: 0;
+	}
+
+	&:disabled,
+	&.disabled,
+	&:disabled[disabled] {
+		cursor: not-allowed;
+		filter: alpha(opacity=65);
+		opacity: 0.65;
+		
+		&:hover {
+			color: #FFF;
+			background-color: #2c3e50;
+		}
+	}
+
+	&:first-child {
+		*margin-left: 0;
+	}
+}
+
+
+/************************
+ * SEARCH FORM STYLES
+ ************************/
+
+.error-404 {
+	#searchform {
+		margin: 1em 0;
+		max-width: 481px;
+	}
+}
+
+#searchform {
+	height: $input__height;
+	overflow: hidden;
+	position: relative;
+
+	label {
+		display: none;
+	}
+
+	#s {
+		padding-right: 12%;
+		width: 100%;
+	}
+
+	#searchsubmit {
+		font-size: 1em;
+		height: $input__height;
+		line-height: $input__height;
+		padding: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 12%;
+	}
+}
+
+
+/************************
+ * PASSWORD FORM STYLES
+ ************************/
+
+.post-password-form {
+	label {
+		display: block;
+	}
+	
+	input[type="password"] {
+		margin-top: 4px;
+		margin-bottom: 1em;
+	}
+}
+
+
+/************************
+ * MEDIA QUERIES
+ ************************/
+
+@media only screen and (min-width: $screen-sm-min) {
+	
+	input[type="submit"],
+	input[type="button"],
+	button[type="submit"],
+	a.button {
+		padding-left: 2em;
+		padding-right: 2em;
+		width: auto;
+	}
+	
+	.post-password-form {
+		input[type="password"] {
+			display: block;
+			width: 50%;
+		}
+	}
+	
+}
+
+@media only screen and (min-width: $screen-md-min) {}
+
+@media only screen and (min-width: $screen-lg-min) {}

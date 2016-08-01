@@ -1,0 +1,69 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Tables Stylesheet
+
+******************************************************************/
+
+table {
+	border-collapse: collapse;
+	margin: 1em 0;
+	text-align: left;
+	width: 100%;
+
+	thead {
+		text-align: center;
+	}
+	
+	th,
+	td {
+		padding: 4px;
+	}
+
+	th {
+		background-color: $table__bg-th-color;
+		border: 1px solid $table__border-color;
+		color: $color__body-text;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	td {
+		border: solid 1px $table__border-color;
+		color: $color__body-text;
+		vertical-align: top;
+	}
+
+	tr:nth-child(even),
+	tr.even {
+		background-color: $table__bg-even-color;
+	}
+
+	tr:nth-child(odd),
+	tr.odd {
+		background-color: $table__bg-odd-color;
+	}
+
+	tr:hover{}
+	
+}
+
+/************************
+ * MEDIA QUERIES
+ ************************/
+
+@media only screen and (min-width: $screen-sm-min) {
+
+	table {
+		th,
+		td {
+			padding: 8px;
+		}
+	}
+
+}
+
+@media only screen and (min-width: $screen-md-min) {}
+
+@media only screen and (min-width: $screen-lg-min) {}

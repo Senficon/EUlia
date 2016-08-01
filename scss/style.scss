@@ -1,0 +1,112 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Main Stylesheet
+
+Here you can easily toggle on/off modules and files.
+
+******************************************************************/
+
+/** STEP 1: Reset **/
+@import "libs/normalize";
+
+/** STEP 2: Utilities **/
+@import "utilities/variables";
+@import "utilities/mixins";
+@import "utilities/accessibility";
+
+/** STEP 3: Elements **/
+@import "elements/typography";
+@import "elements/main-navigation";
+@import "elements/links";
+@import "elements/lists";
+@import "elements/media";
+@import "elements/tables";
+@import "elements/forms";
+@import "elements/bootstrap-grid";
+@import "elements/pagination";
+@import "elements/comments";
+@import "elements/widgets";
+
+/** STEP 5: Plugins **/
+@import "plugins/gravity-forms/base"; // gravity forms styles - uncheck box to NOT output default CSS
+
+/** STEP 6: Libraries **/
+@import "libs/select2"; // better cross browser select input - see https://select2.github.io/
+@import "libs/magnific-popup"; // magnific lightbox styles - see https://github.com/dimsemenov/Magnific-Popup for more info
+
+/** STEP 7: Media Queries **/
+
+/*
+BASE (MOBILE) STYLES
+This is where you add the majority of your styles. These will be loaded on all devices, so make sure this holds the bare minimum any device needs to view your site.
+*/
+@import "media-queries/xs";
+
+/*
+TABLET & SMALLER LAPTOPS
+Here you can begin to add more resource-intensive styles.
+*/
+@media only screen and (min-width: $screen-sm-min) {
+
+	@import "media-queries/sm";
+
+}
+
+/*
+DESKTOP
+*/
+@media only screen and (min-width: $screen-md-min) {
+
+	@import "media-queries/md";
+	//@import "modules/sticky-footer"; // need to add sticky-footer class to the body
+
+}
+
+/*
+FULL VIEWING SIZE
+This is for the larger monitors and possibly full screen viewers.
+*/
+@media only screen and (min-width: $screen-lg-min) {
+
+	@import "media-queries/lg";
+
+}
+
+/*
+RETINA (2x RESOLUTION DEVICES)
+This applies to the retina iPhone (4s) and iPad (2+) along with
+other displays with a 2x resolution. You can also create a media
+query for retina AND a certain size if you want. Go Nuts.
+*/
+/*@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+	only screen and (min--moz-device-pixel-ratio: 1.5),
+	only screen and (min-device-pixel-ratio: 1.5) {
+		@import "media-queries/retina";
+}*/
+
+/*
+iPHONE 5 MEDIA QUERY
+Want to get fancy for no good reason? Knock yourself out.
+*/
+@media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+	// iPhone 5 or iPod Touch 5th generation styles (you can include your own file if you want)
+	input,
+	textarea {
+		-webkit-appearance: none;
+		-webkit-border-radius: 0;
+	}
+}
+
+/*
+PRINT STYLESHEET
+Feel free to customize this. Remember to add things that won't make
+sense to print at the bottom. Things like nav, ads, and forms should
+be set to display none.
+*/
+@media print {
+
+	@import "media-queries/print";
+
+}
