@@ -1,17 +1,17 @@
 == Responsive Design Scaffolding for WordPress ==
 
-Contributors: Hall Internet Marketing
+Contributors: c3o, hutt
 Tags: translation-ready, microformats, rtl-language-support
 
 Requires at least: 4.0
 Tested up to: 4.5.3
 Stable tag: 1.0.0
-License: GPLv2 or later
+License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-Scaffolding is designed to make the life of developers easier. It is built using HTML5 & has a strong semantic foundation. It is developed with the goal of providing a starting point for every responsive WordPress theme that we build.
+This Theme was developed by the office of MEP Julia REDA. It's licensed under GPLv3, so feel free to copy, distribute and/or modify.
 
 == Installation ==
 
