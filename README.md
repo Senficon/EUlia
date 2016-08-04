@@ -1,6 +1,6 @@
-== Responsive Design Scaffolding for WordPress ==
+# EUlia Reda
 
-![./screenshot.png]
+![screenshot](screenshot.png)
 
 Contributors: c3o, hutt
 Tags: translation-ready, microformats, rtl-language-support
