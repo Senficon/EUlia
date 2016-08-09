@@ -17,7 +17,7 @@ get_header(); ?>
 
 			if ( is_home() && ! is_front_page() ) : ?>
 				<header>
-					<h1 class="page-title screen-reader-text">Hello World, especially c3o! <?php //single_post_title(); ?></h1>
+					<h1 class="page-title screen-reader-text">Hello World, especially c3o!</h1>
 				</header>
 
 			<?php
