@@ -21,7 +21,7 @@ get_header(); ?>
 				    $recent_posts = wp_get_recent_posts( $args );
 
 				    foreach( $recent_posts as $recent ){
-				    	echo '<h1 class="heading-headline page-title screen-reader-text"><a href="' . get_permalink($recent['ID'] . '" title="' . esc_attr($recent["post_title"]) . '">'. $recent["post_title"] . '</a></h1>';
+				    	echo '<h1 class="heading-headline page-title screen-reader-text"><a href="' . get_permalink($recent['ID']) . '" title="' . esc_attr($recent["post_title"]) . '">'. $recent["post_title"] . '</a></h1>';
 				    }
 
 					?>
