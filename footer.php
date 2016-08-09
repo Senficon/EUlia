@@ -17,7 +17,7 @@
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'eulia' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'eulia' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
-			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'eulia' ), 'eulia', '<a href="https://juliareda.eu" rel="designer">c3o & hutt in the office of MEP Julia Reda</a>' ); ?>
+			<?php printf( esc_html__( 'Theme: %1$s by %2$s in the office of %3$s .', 'eulia' ), 'EUlia', 'c3o & hutt', '<a href="https://juliareda.eu" rel="designer">MEP Julia Reda</a>' ); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->
