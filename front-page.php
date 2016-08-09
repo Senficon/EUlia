@@ -20,9 +20,12 @@ get_header(); ?>
 					/* Show the last post - or the post marked as featured, if available? */
 				    $top_news = wp_get_recent_posts( array( 'numberposts' => '1' ) );
 
+				    /* Format time in a human-readable format. */
+				    $post_time_posted = sprintf( _x( '%s ago', '%s = human-readable time difference', 'eulia' ), human_time_diff( get_the_time( 'U', $rnews['ID'] ), current_time( 'timestamp' ) ) );
+
 				    foreach( $top_news as $tnews ){
 				    	echo '<h1 class="heading-headline page-title screen-reader-text"><a href="' . get_permalink($tnews['ID']) . '" title="' . esc_attr($tnews["post_title"]) . '">'. $tnews["post_title"] . '</a></h1>';
-				    	echo '<p class="top-news-info">' . $tnews['post_date'] . ' &middot; n shares <!-- #todo integrate shares value (twitter?) --></p>';
+				    	echo '<p class="top-news-info">' . $post_time_posted . ' &middot; n shares <!-- #todo integrate shares value (twitter?) --></p>';
 				    }
 
 					?>
@@ -48,10 +51,13 @@ get_header(); ?>
 
 					/* Show the three posts -- except the one above (offset 1) */
 				    $recent_news = wp_get_recent_posts( array( 'numberposts' => '4', 'offset' => '1' ) );
+				    
+				    /* Format time in a human-readable format. */
+				    $post_time_posted = sprintf( _x( '%s ago', '%s = human-readable time difference', 'eulia' ), human_time_diff( get_the_time( 'U', $rnews['ID'] ), current_time( 'timestamp' ) ) );
 
 				    foreach ($recent_news as $rnews) {
 				    	echo '<h1 class="recent-news-headline screen-reader-text"><a href="' . get_permalink($rnews['ID']) . '" title="' . esc_attr($rnews["post_title"]) . '">'. $rnews["post_title"] . '</a></h1>';
-				    	echo '<p class="recent-news-info"></p>';
+				    	echo '<p class="recent-news-info">' . $post_time_posted . ' &middot; n shares <!-- #todo integrate shares value (twitter?) --></p>';
 				    }
 
 					?>
