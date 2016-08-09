@@ -16,12 +16,13 @@ get_header(); ?>
 				<section class="top-news">
 					<h2 class="heading-category"><?php esc_html_e('Top News', 'eulia'); ?></h2>
 					<?php
-					/* Show the last post - or the post marked as featured, if available? */
-				    $args = array( 'numberposts' => '1' );
-				    $recent_posts = wp_get_recent_posts( $args );
 
-				    foreach( $recent_posts as $recent ){
-				    	echo '<h1 class="heading-headline page-title screen-reader-text"><a href="' . get_permalink($recent['ID']) . '" title="' . esc_attr($recent["post_title"]) . '">'. $recent["post_title"] . '</a></h1>';
+					/* Show the last post - or the post marked as featured, if available? */
+				    $top_news = wp_get_recent_posts( array( 'numberposts' => '1' ) );
+
+				    foreach( $top_news as $tnews ){
+				    	echo '<h1 class="heading-headline page-title screen-reader-text"><a href="' . get_permalink($tnews['ID']) . '" title="' . esc_attr($tnews["post_title"]) . '">'. $tnews["post_title"] . '</a></h1>';
+				    	echo '<p class="top-news-info">' . var_dump($tnews) . '</p>';
 				    }
 
 					?>
@@ -42,7 +43,20 @@ get_header(); ?>
 				</section><!-- #newsletter -->
 
 				<section class="recent-news">
+					<h2 class="heading-category"><?php esc_html_e('Recent News', 'eulia'); ?></h2>
+					<?php
+
+					/* Show the three posts -- except the one above (offset 1) */
+				    $recent_news = wp_get_recent_posts( array( 'numberposts' => '4', 'offset' => '1' ) );
+
+				    foreach ($recent_news as $rnews) {
+				    	echo '<h1 class="recent-news-headline screen-reader-text"><a href="' . get_permalink($rnews['ID']) . '" title="' . esc_attr($rnews["post_title"]) . '">'. $rnews["post_title"] . '</a></h1>';
+				    	echo '<p class="recent-news-info"></p>';
+				    }
+
+					?>
 					<!-- #todo: insert loop with the last ~3(?) articles. -->
+					<a href="#" title="<?php esc_attr_e('More News...', 'eulia'); ?>"><?php esc_html_e('More News...', 'eulia'); ?></a>
 				</section><!-- #recent-news -->
 
 				<section class="front-page-footer">
