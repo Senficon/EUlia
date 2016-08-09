@@ -1,6 +1,7 @@
 <?php
 /**
  * The first site being displayed when loading Julia's website.
+ * Used for both “your latest posts” or “a static page” as set in the front page displays section of Settings → Reading.
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -11,6 +12,7 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+			<h1>Was ist das für 1 Life?</h1>
 
 		<?php
 		if ( have_posts() ) :
