@@ -13,15 +13,13 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 		<?php
-		if ( have_posts() ) :
-
-			if ( is_home() ) : ?>
+		if ( have_posts() ) : ?>
+		
 				<header>
 					<h1 class="page-title screen-reader-text">Hello World! Hello c3o!</h1>
 				</header>
 
 			<?php
-			endif;
 
 			/* Show the last post */
 			while ( have_posts() ) : the_post();
