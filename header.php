@@ -41,6 +41,15 @@
 			endif; ?>
 		</div><!-- .site-branding -->
 
+		<!-- #todo: add language switch menu -->
+		<nav class="language-switch">
+			<!-- <img/>? -->
+			<ul class="language-menu">
+				<li>English</li>
+				<li>German</li>
+			</ul>
+		</nav>
+
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'eulia' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
