@@ -11,11 +11,11 @@ Stable tag: 1.0.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-== Description ==
+## Description
 
 This Theme was developed by the office of MEP Julia REDA. It's licensed under GPLv3, so feel free to copy, distribute and/or modify.
 
-== Installation ==
+## Installation
 
 1. In your admin panel, go to Appearance > Themes and click the Add New button.
 2. Click Upload and Choose File, then select the theme's .zip file. Click Install Now.
