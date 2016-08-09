@@ -22,7 +22,7 @@ get_header(); ?>
 
 				    foreach( $top_news as $tnews ){
 				    	echo '<h1 class="heading-headline page-title screen-reader-text"><a href="' . get_permalink($tnews['ID']) . '" title="' . esc_attr($tnews["post_title"]) . '">'. $tnews["post_title"] . '</a></h1>';
-				    	echo '<p class="top-news-info">' . var_dump($tnews) . '</p>';
+				    	echo '<p class="top-news-info">' . $tnews['post_date'] . ' &middot; n shares <!-- #todo integrate shares value (twitter?) --></p>';
 				    }
 
 					?>
