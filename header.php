@@ -44,7 +44,7 @@
 	<?php
 		// Detect if polylang-plugin is active
 		include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
-		if ( is_plugin_active( 'wp-content/plugins/polylang/polylang.php' ) ):
+		if ( is_plugin_active( 'wp-polylang/polylang.php' ) ):
 	?>
 		<!-- #todo: add language switch menu -->
 		<nav class="language-switch"> 
