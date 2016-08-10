@@ -30,21 +30,21 @@ get_header(); ?>
 				    }
 
 					?>
-				</section><!-- #top-news -->
+				</section><!-- .top-news -->
 
 				<section class="right-now">
 					<h2 class="heading-category"><?php esc_html_e('Right Now', 'eulia'); ?></h2>
 					<!-- #todo: Last Tweet Widget will be placed here. -->
-				</section><!-- #right-now -->
+				</section><!-- .right-now -->
 
 				<section class="current-priorities">
 					<h2 class="heading-category"><?php esc_html_e('Current Priorities', 'eulia'); ?></h2>
 					<!-- #todo: Most important categories will be listed here. Otherwise we use hard links to the topic pages. we'll see. -->
-				</section><!-- #current-priorities -->
+				</section><!-- .current-priorities -->
 
 				<section class="newsletter">
 					<!-- #todo: insert newsletter signup form -->
-				</section><!-- #newsletter -->
+				</section><!-- .newsletter -->
 
 				<section class="recent-news">
 					<h2 class="heading-category"><?php esc_html_e('Recent News', 'eulia'); ?></h2>
@@ -65,12 +65,12 @@ get_header(); ?>
 					?>
 					<!-- #todo: insert loop with the last ~3(?) articles. -->
 					<a href="#" title="<?php esc_attr_e('More News...', 'eulia'); ?>"><?php esc_html_e('More News...', 'eulia'); ?></a>
-				</section><!-- #recent-news -->
+				</section><!-- .recent-news -->
 
 				<section class="front-page-footer">
 				<!-- #todo: insert another newsletter signup form? Otherwise we could insert a countdown like "x days since Oettinger threatened the world-wide-web". -->
 				<!-- brace yourselves, Oettinger is coming. -->
-				</section><!-- #front-page-footer -->
+				</section><!-- .front-page-footer -->
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
