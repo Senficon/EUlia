@@ -43,6 +43,7 @@
 
 	<?php
 		// Detect if polylang-plugin is active?
+		if ( defined( 'POLYLANG_VERSION' ) ):
 	?>
 		<!-- #todo: add language switch menu -->
 		<nav class="language-switch"> 
@@ -55,6 +56,7 @@
 		</nav>
 	<?php
 		//End detection-thingy
+		endif;
 	?>
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'eulia' ); ?></button>
