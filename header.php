@@ -41,15 +41,23 @@
 			endif; ?>
 		</div><!-- .site-branding -->
 
+	<?php
+		// Detect if polylang-plugin is active
+		include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+		if ( is_plugin_active( 'wp-content/plugins/polylang/polylang.php' ) ):
+	?>
 		<!-- #todo: add language switch menu -->
-		<nav class="language-switch">
+		<nav class="language-switch"> 
 			<!-- <img/>? -->
 			<ul class="language-menu">
-				<li>English</li>
-				<li>German</li>
+				<?php 
+				pll_the_languages();
+				?>
 			</ul>
 		</nav>
-
+	<?php
+		endif;
+	?>
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'eulia' ); ?></button>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
