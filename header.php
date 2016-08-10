@@ -42,8 +42,7 @@
 		</div><!-- .site-branding -->
 
 	<?php
-		// Detect if polylang-plugin is active
-		if ( is_plugin_active( 'wp-polylang/polylang.php' ) ):
+		// Detect if polylang-plugin is active?
 	?>
 		<!-- #todo: add language switch menu -->
 		<nav class="language-switch"> 
@@ -55,7 +54,7 @@
 			</ul>
 		</nav>
 	<?php
-		endif;
+		//End detection-thingy
 	?>
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'eulia' ); ?></button>
