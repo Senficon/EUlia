@@ -52,7 +52,7 @@ get_header(); ?>
 
 					/* Show the three posts -- except the one above (offset 1) */
 				    $recent_news = wp_get_recent_posts( array( 'numberposts' => '3', 'offset' => '1' ) );
-
+				    var_dump($recent_news);
 				    foreach ($recent_news as $rnews) {
 
 					    /* Format time in a human-readable format. */
