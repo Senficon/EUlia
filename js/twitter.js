@@ -366,7 +366,7 @@
 
 function showTweet(tweets){
 
-  var element = document.getElementById(''); 
+  var element = document.getElementById(''); //insert Element-id of tweet-container here
   var tweetObject = tweets[0];
 
   var html = 
@@ -379,7 +379,7 @@ function showTweet(tweets){
 }
 
 twitterFetcher.fetch({
-  "id": '', 
+  "id": '', // twitter widget-id
   "domId": '',
   "maxTweets": 1,
   "enableLinks": false,
