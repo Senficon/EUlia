@@ -363,3 +363,32 @@
   window.twitterFetcher = twitterFetcher;
   return twitterFetcher;
 }));
+
+function showTweet(tweets){
+
+  var element = document.getElementById(''); 
+  var tweetObject = tweets[0];
+
+  var html = 
+      '<ul class="twitter">'
+       + '<li class="tweet-body">' + tweetObject.tweet + '</li>'
+       + '<li class="tweet-info">' + '<a href="' + tweetObject.permalinkURL + '" target="_blank">' + tweetObject.time + '</a>' + '</li>'
+    + '</ul>';
+
+  element.innerHTML = html;
+}
+
+twitterFetcher.fetch({
+  "id": '', 
+  "domId": '',
+  "maxTweets": 1,
+  "enableLinks": false,
+  "showUser": false,
+  "showTime": true,
+  "dateFunction": '',
+  "showRetweet": false,
+  "dataOnly": true,
+  "showInteraction": false,
+  "showPermalinks": true,
+  "customCallback": showTweet
+});
