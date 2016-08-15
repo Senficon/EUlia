@@ -379,7 +379,7 @@ function showTweet(tweets){
 }
 
 twitterFetcher.fetch({
-  "id": '', // twitter widget-id
+  "id": 'right-now-tweet', // twitter widget-id
   "domId": '',
   "maxTweets": 1,
   "enableLinks": false,

@@ -35,6 +35,7 @@ get_header(); ?>
 				<section class="right-now">
 					<h2 class="heading-category"><?php esc_html_e('Right Now', 'eulia'); ?></h2>
 					<!-- #todo: Last Tweet Widget will be placed here. -->
+					<div id="right-now-tweet"></div>
 				</section><!-- .right-now -->
 
 				<section class="current-priorities">
