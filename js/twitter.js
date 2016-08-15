@@ -379,8 +379,8 @@ function showTweet(tweets){
 }
 
 twitterFetcher.fetch({
-  "id": 'right-now-tweet', // twitter widget-id
-  "domId": '',
+  "id": '765237512453455872', // twitter widget-id
+  "domId": 'right-now-tweet',
   "maxTweets": 1,
   "enableLinks": false,
   "showUser": false,
