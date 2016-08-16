@@ -378,9 +378,23 @@ function showTweet(tweets){
   element.innerHTML = html;
 }
 
+function showTweet(tweets){
+
+  var element = document.getElementById('right-now-tweet');
+  var tweetObject = tweets[0];
+
+  var html = 
+      '<ul class="twitter">'
+       + '<li class="tweet-body">' + tweetObject.tweet + '</li>'
+       + '<li class="tweet-info">' + '<a href="' + tweetObject.permalinkURL + '" target="_blank">' + tweetObject.time + '</a>' + '</li>'
+    + '</ul>';
+
+  element.innerHTML = html;
+}
+
 twitterFetcher.fetch({
   "id": '765237512453455872', // twitter widget-id
-  "domId": 'right-now-tweet',
+  "domId": '',
   "maxTweets": 1,
   "enableLinks": false,
   "showUser": false,
