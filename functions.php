@@ -44,7 +44,7 @@ function eulia_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'primary' => esc_html__( 'Primary', 'eulia' ),
+		'primary' => esc_html_x( 'Primary', 'name of a menu', 'eulia' ),
 	) );
 
 	/*
