@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: EUlia\n"
-"POT-Creation-Date: 2016-08-17 22:44+0200\n"
-"PO-Revision-Date: 2016-08-17 21:45+0200\n"
+"POT-Creation-Date: 2016-08-18 15:54+0200\n"
+"PO-Revision-Date: 2016-08-18 15:54+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -76,7 +76,7 @@ msgstr ""
 msgid "Top News"
 msgstr ""
 
-#: front-page.php:26 front-page.php:60
+#: front-page.php:26 front-page.php:59
 #, php-format
 msgctxt "%s = human-readable time difference"
 msgid "%s ago"
@@ -86,19 +86,25 @@ msgstr ""
 msgid "Right Now"
 msgstr ""
 
-#: front-page.php:42
+#: front-page.php:37
+msgctxt "Text being displayed until Julia's last tweet is loaded."
+msgid "Loading last tweet…"
+msgstr ""
+
+#: front-page.php:41
 msgid "Current Priorities"
 msgstr ""
 
-#: front-page.php:51
+#: front-page.php:50
 msgid "Recent News"
 msgstr ""
 
-#: front-page.php:68
+#: front-page.php:67
 msgid "More News..."
 msgstr ""
 
 #: functions.php:47
+msgctxt "name of a menu"
 msgid "Primary"
 msgstr ""
 
@@ -146,7 +152,7 @@ msgstr ""
 
 #: inc/template-tags.php:65
 #, php-format
-msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgid "Ask a question<span class=\"screen-reader-text\"> on %s</span>"
 msgstr ""
 
 #: inc/template-tags.php:72 template-parts/content-page.php:34
