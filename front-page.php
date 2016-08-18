@@ -26,7 +26,7 @@ get_header(); ?>
 				    	$post_time_posted = sprintf( _x( '%s ago', '%s = human-readable time difference', 'eulia' ), human_time_diff( get_the_time( 'U', $tnews['ID'] ), current_time( 'timestamp' ) ) );
 				    	
 				    	echo '<h1 class="heading-headline page-title"><a href="' . get_permalink( $tnews['ID'] ) . '" title="' . esc_attr( $tnews["post_title"] ) . '">'. esc_html( $tnews["post_title"] ) . '</a></h1>';
-				    	echo '<p class="top-news-info">' . $post_time_posted . ' &middot; <?php $shares = 0; printf( _n( '%d share', '%d shares', $shares, 'text-domain' ), $shares ); ?> <!-- #todo integrate shares value (twitter?) --></p>';
+				    	echo '<p class="top-news-info">' . $post_time_posted . ' &middot; <?php $shares = 0; printf( _n( '%d share', '%d shares', $shares, 'eulia' ), $shares ); ?> <!-- #todo integrate shares value (twitter?) --></p>';
 				    }
 
 					?>
