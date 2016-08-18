@@ -384,10 +384,8 @@ function showTweet(tweets){
   var tweetObject = tweets[0];
 
   var html = 
-      '<ul class="twitter">'
-       + '<li class="tweet-body">' + tweetObject.tweet + '</li>'
-       + '<li class="tweet-info">' + '<a href="' + tweetObject.permalinkURL + '" target="_blank">' + tweetObject.time + '</a>' + '</li>'
-    + '</ul>';
+       + '<p class="right-now-tweet-body">' + tweetObject.tweet + '</p>'
+       + '<p class="right-now-tweet-info">' + '<a href="' + tweetObject.permalinkURL + '" target="_blank">' + tweetObject.time + '</a>' + '</p>';
 
   element.innerHTML = html;
 }
