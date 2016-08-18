@@ -366,20 +366,6 @@
 
 function showTweet(tweets){
 
-  var element = document.getElementById(''); //insert Element-id of tweet-container here
-  var tweetObject = tweets[0];
-
-  var html = 
-      '<ul class="twitter">'
-       + '<li class="tweet-body">' + tweetObject.tweet + '</li>'
-       + '<li class="tweet-info">' + '<a href="' + tweetObject.permalinkURL + '" target="_blank">' + tweetObject.time + '</a>' + '</li>'
-    + '</ul>';
-
-  element.innerHTML = html;
-}
-
-function showTweet(tweets){
-
   var element = document.getElementById('right-now-tweet');
   var tweetObject = tweets[0];
 
