@@ -1,0 +1,35 @@
+ul.language-switch {
+	list-style: none;
+	padding-left: 0;
+	margin-top: 5px;
+	margin-bottom: 0;
+	margin-left: 0;
+	font-size: 12px;
+}
+
+ul.language-switch li {
+	display: inline-block;
+}
+
+ul.language-switch li:after {
+	content: " |";
+}
+
+ul.language-switch li:last-child:after {
+	content: none;
+}
+
+.language-switch a {
+	color: #888;
+}
+
+.language-switch a:before {
+	content: "\f0ac  ";
+	font-family: "FontAwesome";
+	font-size: 0.8em;
+	color: rgba(73, 73, 73, 0.50);
+}
+
+.language-switch a:hover:before {
+	color: rgba(73, 73, 73, 0.75);
+}
