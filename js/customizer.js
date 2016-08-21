@@ -39,4 +39,12 @@
 			}
 		} );
 	} );
+
+	// Twitter Widget ID
+	wp.customize( 'twitter_widget_id' , function ( value ) {
+		value.bind( function( to ) {
+			// action
+		} )
+	} );
+
 } )( jQuery );
