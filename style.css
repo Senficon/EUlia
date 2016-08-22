@@ -702,7 +702,7 @@ ul.language-menu {
   margin-top: 5px;
   margin-bottom: 0;
   margin-left: 0;
-  font-size: 12px; }
+  /* font-size: 12px; */ }
   ul.language-menu li {
     display: inline-block; }
     ul.language-menu li:after {
@@ -710,6 +710,6 @@ ul.language-menu {
     ul.language-menu li:last-child:after {
       content: none; }
   ul.language-menu a {
-    color: #888; }
+    color: blue; }
 
 /*# sourceMappingURL=style.css.map */
