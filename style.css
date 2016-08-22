@@ -696,33 +696,20 @@ object {
 /*--------------------------------------------------------------
 # i18n menus and stuff
 --------------------------------------------------------------*/
-ul.language-switch {
+ul.language-menu {
   list-style: none;
   padding-left: 0;
   margin-top: 5px;
   margin-bottom: 0;
   margin-left: 0;
   font-size: 12px; }
-
-ul.language-switch li {
-  display: inline-block; }
-
-ul.language-switch li:after {
-  content: " |"; }
-
-ul.language-switch li:last-child:after {
-  content: none; }
-
-.language-switch a {
-  color: #888; }
-
-.language-switch a:before {
-  content: "\f0ac  ";
-  font-family: "FontAwesome";
-  font-size: 0.8em;
-  color: rgba(73, 73, 73, 0.5); }
-
-.language-switch a:hover:before {
-  color: rgba(73, 73, 73, 0.75); }
+  ul.language-menu li {
+    display: inline-block; }
+    ul.language-menu li:after {
+      content: " |"; }
+    ul.language-menu li:last-child:after {
+      content: none; }
+  ul.language-menu a {
+    color: #888; }
 
 /*# sourceMappingURL=style.css.map */
