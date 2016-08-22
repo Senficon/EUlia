@@ -54,14 +54,16 @@ get_header(); ?>
 
 					/* Show the three posts -- except the one above (offset 1) */
 				    $recent_news = wp_get_recent_posts( array( 'numberposts' => '3', 'offset' => '1' ) );
+				    $shares = 0;
 
 				    foreach ($recent_news as $rnews) {
 
 					    /* Format time in a human-readable format. */
 					    $post_time_posted = sprintf( _x( '%s ago', '%s = human-readable time difference', 'eulia' ), human_time_diff( get_the_time( 'U', $rnews['ID'] ), current_time( 'timestamp' ) ) );
+					    $sharecount = sprintf( _n( '%d share', '%d shares', $shares, 'eulia' ), $shares );
 
 				    	echo '<h1 class="recent-news-headline"><a href="' . get_permalink( $rnews['ID'] ) . '" title="' . esc_attr( $rnews["post_title"] ) . '">'. esc_html( $rnews["post_title"] ) . '</a></h1>';
-				    	echo '<p class="recent-news-info">' . $post_time_posted . ' &middot; n shares <!-- #todo integrate shares value (twitter?) --></p>';
+				    	echo '<p class="recent-news-info">' . $post_time_posted . ' &middot; ' . $sharecount . '<!-- #todo integrate shares value (twitter?) --></p>';
 				    }
 
 					?>
