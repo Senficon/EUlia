@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: EUlia\n"
-"POT-Creation-Date: 2016-08-18 16:53+0200\n"
+"POT-Creation-Date: 2016-08-23 19:00+0200\n"
 "PO-Revision-Date: 2016-08-18 15:54+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -69,37 +69,51 @@ msgstr ""
 
 #: footer.php:18
 #, php-format
-msgid "%1$s &beta; v0.0.0.1 by %2$s in the office of %3$s."
+msgid "%1$s &beta; v0.1 by %2$s in the office of %3$s."
 msgstr ""
 
-#: front-page.php:17
+#: front-page.php:26
+msgctxt ""
+"header of a sticky post that informs about limited language support. (shown "
+"in every language except English and German)"
+msgid "Notice"
+msgstr ""
+
+#: front-page.php:34
 msgid "Top News"
 msgstr ""
 
-#: front-page.php:26 front-page.php:59
+#: front-page.php:44 front-page.php:79
 #, php-format
 msgctxt "%s = human-readable time difference"
 msgid "%s ago"
 msgstr ""
 
-#: front-page.php:36
+#: front-page.php:45 front-page.php:80
+#, php-format
+msgid "%d share"
+msgid_plural "%d shares"
+msgstr[0] ""
+msgstr[1] ""
+
+#: front-page.php:55
 msgid "Right Now"
 msgstr ""
 
-#: front-page.php:37
+#: front-page.php:56
 msgctxt "Text being displayed until Julia's last tweet is loaded."
 msgid "Loading last tweet…"
 msgstr ""
 
-#: front-page.php:41
+#: front-page.php:60
 msgid "Current Priorities"
 msgstr ""
 
-#: front-page.php:50
+#: front-page.php:69
 msgid "Recent News"
 msgstr ""
 
-#: front-page.php:67
+#: front-page.php:88
 msgid "More News..."
 msgstr ""
 
@@ -201,7 +215,7 @@ msgid "EUlia"
 msgstr ""
 
 #. Theme URI of the plugin/theme
-msgid "https://github.com/JuliaRedaMEP/EUlia"
+msgid "http://underscores.me/"
 msgstr ""
 
 #. Description of the plugin/theme
