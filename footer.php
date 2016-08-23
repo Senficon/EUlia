@@ -15,7 +15,7 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<?php printf( esc_html__( '%1$s &beta; v0.0.0.1 by %2$s in the office of %3$s.', 'eulia' ), '<a href="https://github.com/JuliaRedaMEP/EUlia" title="EUlia / GitHub">EUlia</a>', 'c3o & hutt', '<a href="https://juliareda.eu" title="Julia Reda" rel="designer">MEP Julia Reda</a>' ); ?>
+			<?php printf( esc_html__( '%1$s &beta; v0.1 by %2$s in the office of %3$s.', 'eulia' ), '<a href="https://github.com/JuliaRedaMEP/EUlia" title="EUlia / GitHub">EUlia</a>', 'c3o & hutt', '<a href="https://juliareda.eu" title="Julia Reda" rel="designer">MEP Julia Reda</a>' ); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
 </div><!-- #page -->

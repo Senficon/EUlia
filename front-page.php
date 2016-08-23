@@ -12,6 +12,23 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+			<?php
+				$sticky = get_option( 'sticky_posts' );
+				$args = array(
+					'posts_per_page' => 1,
+					'post__in'  => $sticky,
+					'ignore_sticky_posts' => 1
+				);
+				$query = new WP_Query( $args );
+				if ( isset($sticky[0]) ):
+			?>
+				<section class="sticky-post language-not-fully-supported">
+					<h2 class="heading-category"><?php esc_html( _x( 'Notice', 'header of a sticky post that informs about limited language support. (shown in every language except English and German)', 'eulia' ) ); ?></h2>
+					<p class="sticky-post-text"><?php $query->the_post(); ?></p>
+				</section>
+			<?php
+				endif;
+			?>
 
 				<section class="top-news">
 					<h2 class="heading-category"><?php esc_html_e('Top News', 'eulia'); ?></h2>
