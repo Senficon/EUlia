@@ -54,6 +54,7 @@ get_header(); ?>
 				<section class="right-now">
 					<h2 class="heading-category"><?php esc_html_e('Right Now', 'eulia'); ?></h2>
 					<p id="right-now-tweet"><?php _x('Loading last tweet…', 'Text being displayed until Julia\'s last tweet is loaded.', 'eulia'); ?></p>
+					<p id="right-now-tweet-info"></p>
 				</section><!-- .right-now -->
 
 				<section class="current-priorities">
