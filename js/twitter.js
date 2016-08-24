@@ -366,15 +366,11 @@
 
 function showTweet(tweets){
 
-  var element = document.getElementById('right-now-tweet');
   var tweetObject = tweets[0];
 
-  var html = 
-       + '<p class="right-now-tweet-body">' + tweetObject.tweet + '</p>'
-       //+ '<p class="right-now-tweet-info">' + '<a href="' + tweetObject.permalinkURL + '" target="_blank">' + tweetObject.time + '</a>' + '</p>'
-  ;
-
-  element.innerHTML = html;
+  document.getElementById('right-now-tweet').innerHTML = tweetObject.tweet;
+  document.getElementById('right-now-tweet-info').innerHTML = '<a href="' + tweetObject.permalinkURL + '" target="_blank">' + tweetObject.time + '</a>';
+  
 }
 
 twitterFetcher.fetch({
