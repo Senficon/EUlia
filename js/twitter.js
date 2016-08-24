@@ -367,7 +367,7 @@
 function showTweet(tweets){
 
   var tweetObject = tweets[0];
-  alert(tweetObject.author);
+  console.log(tweetObject.author);
   //document.getElementById('right-now-tweet-avatar').src = tweetObject.
   document.getElementById('right-now-tweet').innerHTML = tweetObject.tweet;
   document.getElementById('right-now-tweet-info').innerHTML = '<a href="' + tweetObject.permalinkURL + '" target="_blank">' + tweetObject.time + '</a>';
