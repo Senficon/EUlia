@@ -374,18 +374,3 @@ function showTweet(tweets){
   document.getElementById('right-now-tweet-info').innerHTML = '<a href="' + tweetObject.permalinkURL + '" target="_blank">' + tweetObject.time + '</a>';
 
 }
-
-twitterFetcher.fetch({
-  "id": '765237512453455872', // twitter widget-id
-  "domId": '',
-  "maxTweets": 1,
-  "enableLinks": false,
-  "showUser": false,
-  "showTime": true,
-  "dateFunction": '',
-  "showRetweet": false,
-  "dataOnly": true,
-  "showInteraction": false,
-  "showPermalinks": true,
-  "customCallback": showTweet
-});
