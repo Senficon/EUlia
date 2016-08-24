@@ -1,7 +1,4 @@
 <?php
-
-var $themeVersion = '&beta; v0.0.1';
-
 /**
  * Custom functions that act independently of the theme templates.
  *
@@ -9,6 +6,11 @@ var $themeVersion = '&beta; v0.0.1';
  *
  * @package EUlia
  */
+
+/**
+ * EUlia Versioning is done here.
+ */
+$themeVersion = '&beta; v0.0.1';
 
 /**
  * Adds custom classes to the array of body classes.
