@@ -1,4 +1,7 @@
 <?php
+
+$themeVersion = '&beta; v0.0.1';
+
 /**
  * Custom functions that act independently of the theme templates.
  *
@@ -27,3 +30,7 @@ function eulia_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'eulia_body_classes' );
+
+function eulia_get_theme_version() {
+	return $themeVersion;
+}
