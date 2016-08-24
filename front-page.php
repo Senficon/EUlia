@@ -98,23 +98,6 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-	<!-- Twitter script is included here so it doesen't throw any error on article pages. -->
-	<script type="text/javascript">
-	twitterFetcher.fetch({
-	  "id": '765237512453455872', // twitter widget-id
-	  "domId": '',
-	  "maxTweets": 1,
-	  "enableLinks": false,
-	  "showUser": false,
-	  "showTime": true,
-	  "dateFunction": '',
-	  "showRetweet": false,
-	  "dataOnly": true,
-	  "showInteraction": false,
-	  "showPermalinks": true,
-	  "customCallback": showTweet
-	});
-	</script>
 <?php
 get_sidebar();
 get_footer();
