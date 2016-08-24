@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: EUlia\n"
-"POT-Creation-Date: 2016-08-23 19:01+0200\n"
-"PO-Revision-Date: 2016-08-23 19:02+0200\n"
+"POT-Creation-Date: 2016-08-24 15:33+0200\n"
+"PO-Revision-Date: 2016-08-24 15:33+0200\n"
 "Last-Translator: hutt <jannis@hutt.io>\n"
 "Language-Team: hutt <jannis@hutt.io>\n"
 "Language: de_DE\n"
@@ -71,8 +71,11 @@ msgstr "Fragen sind nicht aktiviert."
 
 #: footer.php:18
 #, php-format
-msgid "%1$s &beta; v0.1 by %2$s in the office of %3$s."
-msgstr "%1$s &beta; v0.1 von %2$s im Büro von %3$s."
+msgctxt ""
+"%1$s = theme name, %2$s = version, %3$s = author name(s), %4$s = office of "
+"Julia Reda"
+msgid "%1$s %2$s by %3$s in the office of %4$s."
+msgstr "%1$s %2$s von %3$s im Büro von %4$s"
 
 #: front-page.php:26
 msgctxt ""
@@ -85,13 +88,13 @@ msgstr "Hinweis"
 msgid "Top News"
 msgstr "Top News"
 
-#: front-page.php:44 front-page.php:79
+#: front-page.php:44 front-page.php:81
 #, php-format
 msgctxt "%s = human-readable time difference"
 msgid "%s ago"
 msgstr "vor %s"
 
-#: front-page.php:45 front-page.php:80
+#: front-page.php:45 front-page.php:82
 #, php-format
 msgid "%d share"
 msgid_plural "%d shares"
@@ -103,19 +106,23 @@ msgid "Right Now"
 msgstr "Gerade Eben"
 
 #: front-page.php:56
+msgid "@senficon's Twitter avatar"
+msgstr "Twitter-Avatar von @Senficon"
+
+#: front-page.php:57
 msgctxt "Text being displayed until Julia's last tweet is loaded."
 msgid "Loading last tweet…"
 msgstr "Letzter Tweet wird geladen…"
 
-#: front-page.php:60
+#: front-page.php:62
 msgid "Current Priorities"
 msgstr "Aktuelle Schwerpunkte"
 
-#: front-page.php:69
+#: front-page.php:71
 msgid "Recent News"
 msgstr "Aktuelle News"
 
-#: front-page.php:88
+#: front-page.php:90
 msgid "More News..."
 msgstr "Weitere Nachrichten"
 
@@ -237,6 +244,15 @@ msgstr "c3o & hutt"
 #. Author URI of the plugin/theme
 msgid "https://juliareda.eu"
 msgstr "https://juliareda.EU"
+
+#~ msgid "%1$s %2$s by %3$s in the office of %4$s."
+#~ msgstr "%1$s %2$s von %3$s im Büro von %4$s"
+
+#~ msgid "%1$s %2$s %3$s in the office of %4$s."
+#~ msgstr "%1$s %2$s von %3$s im Büro von %4$s"
+
+#~ msgid "%1$s &beta; v0.1 by %2$s in the office of %3$s."
+#~ msgstr "%1$s &beta; v0.1 von %2$s im Büro von %3$s."
 
 #~ msgid "%1$s &beta; v0.0.0.1 by %2$s in the office of %3$s."
 #~ msgstr "%1$s &beta; v0.0.0.1 von %2$s im Büro von %3$s."
