@@ -20,3 +20,8 @@ This Theme was developed by the office of MEP Julia REDA. It's licensed under GP
 1. In your admin panel, go to Appearance > Themes and click the Add New button.
 2. Click Upload and Choose File, then select the theme's .zip file. Click Install Now.
 3. Click Activate to use your new theme right away.
+
+## Additional Plugins
+
+* We're using [comment popularity](https://github.com/humanmade/comment-popularity) by [humanmade](https://github.com/humanmade) under the GPL v2 license.
+	* Also added a translation in German ([Pull Request](https://github.com/humanmade/comment-popularity/pull/110)).
